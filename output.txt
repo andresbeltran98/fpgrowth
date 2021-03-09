@@ -1,0 +1,48 @@
+FPTree Algorithm
+Frequent items:  17
+['bread']->4
+['milk']->4
+['bread', 'milk']->3
+['diaper']->4
+['bread', 'diaper']->3
+['milk', 'diaper']->3
+['bread', 'milk', 'diaper']->2
+['beer']->3
+['diaper', 'beer']->3
+['bread', 'beer']->2
+['diaper', 'bread', 'beer']->2
+['milk', 'beer']->2
+['diaper', 'milk', 'beer']->2
+['coke']->2
+['milk', 'coke']->2
+['diaper', 'coke']->2
+['milk', 'diaper', 'coke']->2
+
+Association Rules:
+['bread']->['milk'] (s=0.6 c=0.75)
+['milk']->['bread'] (s=0.6 c=0.75)
+['bread']->['diaper'] (s=0.6 c=0.75)
+['diaper']->['bread'] (s=0.6 c=0.75)
+['milk']->['diaper'] (s=0.6 c=0.75)
+['diaper']->['milk'] (s=0.6 c=0.75)
+['bread', 'milk']->['diaper'] (s=0.4 c=0.67)
+['bread', 'diaper']->['milk'] (s=0.4 c=0.67)
+['milk', 'diaper']->['bread'] (s=0.4 c=0.67)
+['diaper']->['beer'] (s=0.6 c=0.75)
+['beer']->['diaper'] (s=0.6 c=1.0)
+['beer']->['bread'] (s=0.4 c=0.67)
+['beer']->['diaper', 'bread'] (s=0.4 c=0.67)
+['diaper', 'bread']->['beer'] (s=0.4 c=0.67)
+['diaper', 'beer']->['bread'] (s=0.4 c=0.67)
+['bread', 'beer']->['diaper'] (s=0.4 c=1.0)
+['beer']->['milk'] (s=0.4 c=0.67)
+['beer']->['diaper', 'milk'] (s=0.4 c=0.67)
+['diaper', 'milk']->['beer'] (s=0.4 c=0.67)
+['diaper', 'beer']->['milk'] (s=0.4 c=0.67)
+['milk', 'beer']->['diaper'] (s=0.4 c=1.0)
+['coke']->['milk'] (s=0.4 c=1.0)
+['coke']->['diaper'] (s=0.4 c=1.0)
+['coke']->['milk', 'diaper'] (s=0.4 c=1.0)
+['milk', 'diaper']->['coke'] (s=0.4 c=0.67)
+['milk', 'coke']->['diaper'] (s=0.4 c=1.0)
+['diaper', 'coke']->['milk'] (s=0.4 c=1.0)
